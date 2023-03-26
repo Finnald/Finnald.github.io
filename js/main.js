@@ -3,7 +3,6 @@ request.open('GET', 'https://api.github.com/users/finnald/repos', true)
 
 request.onload = function () {
     var data = JSON.parse(this.response);
-    console.log(data)
 
     var repoCards = '';
 
