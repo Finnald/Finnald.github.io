@@ -17,7 +17,7 @@ request.onload = function () {
         repoCards += '<div class="card-actions justify-end">';
         repoCards += '<p class="my-3">Created: '+status.created_at.substring(0,10)+' </p>';
         repoCards += '<p class="my-3">'+status.language+' </p>';
-        repoCards += '<a href="'+status.html_url+'" target="_blank"><button class="btn btn-primary">Take a look</button></a>';
+        repoCards += '<a href="'+status.html_url+'" target="_blank"><p class="underline my-3 mx-auto">Link</p></a>';
         repoCards += '</div>';
         repoCards += '</div>';
         repoCards += '</div>';
