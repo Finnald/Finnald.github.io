@@ -8,7 +8,7 @@ request.onload = function () {
 
     $.each(data, function(i, status) {
         repoCards += '<div class="max-xl:col-span-3 m-auto  card card-compact lg:w-70 bg-base-100 shadow-xl col-span-1">';
-        repoCards += '<div class="card-body lg:h-[250px] max-lg:h-[300px] max-w-[418px] lg:min-w-[418px] max-lg:w-[280px]">';
+        repoCards += '<div class="card-body lg:h-[250px] max-lg:h-[300px] max-w-[418px] lg:min-w-[418px] max-lg:max-w-[280px]">';
 
         repoCards += '<h2 class="card-title">'+status.name+'</h2>';
         repoCards +='<p>'+status.description+'</p>';
