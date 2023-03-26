@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio,line-clamp"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   </head>
-  <body>
+  <body class="max-w-[100%]">
     <script src="js/main.js"></script>
     <div class="bg-base-300 sticky top-0 z-50 drop-shadow-xl">
       <div class="navbar">
@@ -19,7 +19,7 @@
             <a class="btn btn-ghost" href="#top"><i class="material-symbols-outlined">expand_less</i></a>
         </div>
         <div class="flex-none">
-            <ul class="menu max-lg:invisible max-lg:absolute menu-horizontal">
+            <ul class="menu max-lg:invisible max-lg:absolute max-lg:w-0 menu-horizontal">
                 <li><a class="rounded-lg" href="#about">About</a></li>
                 <li><a class="rounded-lg" href="#links">Find me</a></li>
                 <li><a class="rounded-lg" href="#skills">Skills</a></li>
@@ -74,7 +74,7 @@
             </p>
         </div>
         <div class="col-span-4 md:bg-cover max-md:invisible max-md:absolute" style="background-image: url('images/keyboard.webp')">
-            <img class="md:opacity-0 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
+            <img class="invisible 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
         </div>
         <div class="col-span-1"></div>
     </div>
@@ -124,7 +124,7 @@
       <div id="skills" class="flex bg-accent grid md:grid-cols-11 2xl:grid-cols-12 text-white" style="scroll-margin-top:60px">
         <div class="2xl:col-span-2 max-2xl:absolute"></div>
         <div class="col-span-4 md:bg-cover max-md:invisible max-md:absolute" style="background-image: url('images/skills.PNG')">
-            <img class="md:opacity-0 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
+            <img class="invisible 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
         </div>
           <div class="prose p-6 text-white col-span-6">
               <h3 class="text-white text-4xl">Skills & Education</h1>
@@ -154,8 +154,8 @@
           <div class="grid h-20 place-items-center"><h3 class="text-white text-3xl font-bold text-center">Contact me</h3></div> 
           <div class="divider"></div> 
         </div>
-        <form action="https://formspree.io/f/xqkodjej" method="POST" target="_blank">
-          <div class="grid grid-cols-1 mx-auto md:w-[50%]">
+        <form action="https://formspree.io/f/xqkodjej" method="POST" target="_blank" class="max-w-[100%]">
+          <div class="grid mx-auto md:w-[50%]">
             <input class="mb-4 email-input valid:border-green-500 required:border-red-500 textarea resize-none h-[30%] bg-base-300 my-0 rounded-box" placeholder="Email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <textarea class="email-input valid:border-green-500 required:border-red-500 textarea bg-base-300 my-0 h-[200px] rounded-box" placeholder="Message" name="message" required></textarea>
             <button class="btn btn-primary rounded-box mt-5 w-[75px]" type="submit" >Send</button>
