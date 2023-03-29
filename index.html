@@ -15,11 +15,11 @@
     <script src="js/main.js"></script>
     <div class="bg-base-300 sticky top-0 z-50 drop-shadow-xl">
       <div class="navbar">
-        <div class="flex-1 max-lg:invisible max-lg:absolute">
+        <div class="flex-1 max-sm:invisible max-sm:absolute">
             <a class="btn btn-ghost" href="#top"><i class="material-symbols-outlined">expand_less</i></a>
         </div>
         <div class="flex-none">
-            <ul class="menu max-lg:invisible max-lg:absolute max-lg:w-0 menu-horizontal">
+            <ul class="menu max-sm:invisible max-sm:absolute max-sm:w-0 menu-horizontal">
                 <li><a class="rounded-lg" href="#about">About</a></li>
                 <li><a class="rounded-lg" href="#links">Find me</a></li>
                 <li><a class="rounded-lg" href="#skills">Skills</a></li>
@@ -27,7 +27,7 @@
                 <li><a class="rounded-lg" href="#contact">Contact me</a></li>
             </ul>
       </div>
-      <div class="flex-1 lg:invisible lg:absolute">
+      <div class="flex-1 sm:invisible sm:absolute">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -52,7 +52,7 @@
     <div class="hero min-h-fit" style="background-image: url('images/perth.jpg'); scroll-margin-bottom:60px;">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content text-white">
-            <div class="py-40 max-w-md">
+            <div class="py-40 max-w-sm">
                 <div class="flex-auto grid place-items-center avatar">
                     <div class="rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
                         <img src="images/self.png" class="rounded-full">
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div id="about" class="flex bg-gray grid md:grid-cols-11 2xl:grid-cols-12 text-white" style="scroll-margin-top:60px">
+    <div id="about" class="flex bg-gray grid sm:grid-cols-11 2xl:grid-cols-12 text-white" style="scroll-margin-top:60px">
       <div class="2xl:col-span-2 max-2xl:absolute"></div>
         <div class="prose p-6 text-white col-span-5">
             <h3 class="text-white text-4xl">About me</h1>
@@ -73,13 +73,13 @@
             Apart from my studies, I have two adorable kittens named Wolfgang and Freya who are my constant (slightly annoying) companions. They bring me joy and are a great way for me to relax when I'm not busy with my coursework. I'm really excited to learn and grow in the field of software engineering, and I hope to make a significant impact in the industry in the future.
             </p>
         </div>
-        <div class="col-span-4 md:bg-cover max-md:invisible max-md:absolute" style="background-image: url('images/keyboard.webp')">
-            <img class="invisible 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
+        <div class="col-span-4 sm:bg-cover max-sm:invisible max-sm:absolute" style="background-image: url('images/keyboard.webp')">
+            <img class="invisible 2xl:max-w-[30%]" src="images/keyboard.webp" alt="Keyboard image">
         </div>
         <div class="col-span-1"></div>
     </div>
 
-    <div id="links" class="flex-auto grid grid-cols-3 gap-8 bg-black p-20 2xl:px-80 max-md:px-10" style="scroll-margin-top:60px">
+    <div id="links" class="flex-auto grid grid-cols-3 gap-8 bg-black p-20 2xl:px-80 max-sm:px-10" style="scroll-margin-top:60px">
         <div class="col-span-3 pb-20">
             <h3 class="text-white text-3xl font-bold text-center">Places you can find me</h3>
         </div>
@@ -121,9 +121,9 @@
               </div>
       </div>
 
-      <div id="skills" class="flex bg-accent grid md:grid-cols-11 2xl:grid-cols-12 text-white" style="scroll-margin-top:60px">
+      <div id="skills" class="flex bg-accent grid sm:grid-cols-11 2xl:grid-cols-12 text-white" style="scroll-margin-top:60px">
         <div class="2xl:col-span-2 max-2xl:absolute"></div>
-        <div class="col-span-4 md:bg-cover max-md:invisible max-md:absolute" style="background-image: url('images/skills.PNG')">
+        <div class="col-span-4 sm:bg-cover max-sm:invisible max-sm:absolute" style="background-image: url('images/skills.PNG')">
             <img class="invisible 2xl:max-w-[30%]" src="images/keyboard.webp" alt="FFXIV: Endwalker Image">
         </div>
           <div class="prose p-6 text-white col-span-6">
@@ -139,7 +139,7 @@
           </div>
       </div>
 
-      <div id="projects" class="flex-auto bg-blue-900 p-20 2xl:px-80 w-[100%] max-md:px-10" style="scroll-margin-top:60px">
+      <div id="projects" class="flex-auto bg-blue-900 p-20 2xl:px-80 w-[100%] max-sm:px-10" style="scroll-margin-top:60px">
           <div class="flex flex-col w-full col-span-3">
             <div class="grid h-20 place-items-center"><h3 class="text-white text-3xl font-bold text-center">My most recent projects</h3></div> 
             <div class="divider"></div> 
@@ -149,13 +149,13 @@
       </div>
 
       <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-      <div id="contact" class="flex-auto bg-base p-20 2xl:px-80 w-[100%] max-md:px-10" style="scroll-margin-top:60px">
+      <div id="contact" class="flex-auto bg-base p-20 2xl:px-80 w-[100%] max-sm:px-10" style="scroll-margin-top:60px">
         <div class="flex flex-col w-full col-span-3">
           <div class="grid h-20 place-items-center"><h3 class="text-white text-3xl font-bold text-center">Contact me</h3></div> 
           <div class="divider"></div> 
         </div>
         <form action="https://formspree.io/f/xqkodjej" method="POST" target="_blank" class="max-w-[100%]">
-          <div class="grid mx-auto md:w-[50%]">
+          <div class="grid mx-auto sm:w-[50%]">
             <input class="mb-4 email-input valid:border-green-500 required:border-red-500 textarea resize-none h-[30%] bg-base-300 my-0 rounded-box" placeholder="Email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <textarea class="email-input valid:border-green-500 required:border-red-500 textarea bg-base-300 my-0 h-[200px] rounded-box" placeholder="Message" name="message" required></textarea>
             <button class="btn btn-primary rounded-box mt-5 w-[75px]" type="submit" >Send</button>
