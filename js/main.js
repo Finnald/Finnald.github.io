@@ -2,7 +2,7 @@ var request = new XMLHttpRequest()
 request.open('GET', 'https://api.github.com/users/finnald/repos', true)
 
 request.onload = function () {
-    var data = JSON.parse(this.response);
+    var data = JSON.parse(this.response).sort((a, b) => (a.id < b.id) ? 1 : -1);
 
     var repoCards = '';
 
